@@ -1,0 +1,216 @@
+					<div class="row" style="display: none">
+						<!------ STEP 1 ----->
+						<div class="modal-appl-forms notactive">
+							<div class="col-xs-12">
+								<h2>Персональные данные</h2>
+							</div>
+							<div class="col-xs-12">
+								<span>Персональный № (ПИН)</span>
+								<input type="number" min="0" name="pin" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Фамилия</span>
+								<input type="text"  name="f" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Имя</span>
+								<input type="text" name="i" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Отчество</span>
+								<input type="text" name="o" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Электронная почта</span>
+								<input type="email" name="email">
+							</div>
+							<div class="col-xs-12">
+								<span>Мобильный телефон</span>
+								<input type="number" name="mobile_num" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Семейное положение</span>
+								<select name="marital_status">
+									<option value="0">Выберите</option>
+									<option value="1">Женат(Замужем)</option>
+								</select>
+							</div>
+							<div class="col-xs-12 mt-30">
+								<h2>Паспортные данные</h2>
+							</div>
+							<div class="col-xs-12">
+								<span>Серия паспорта</span>
+								<select name="seria_passport">
+									<option value="0">Выберите</option>
+									<option value="1">ID</option>
+									<option value="2">AN</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<span>Номер паспорта</span>
+								<input type="text" name="num_passport" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Дата выдачи паспорта</span>
+								<input type="date" name="date1" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Cрок действия паспорта</span>
+								<input type="date" name="date2" required>
+							</div>
+							<div class="col-xs-12">
+								<span>№ органа выдачи</span>
+								<input type="text" name="num_organ" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Фота паспорта (лицева сторона)</span>
+								<input type="file" name="file1" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Фота паспорта (обратная сторона сторона)</span>
+								<input type="file" name="file2" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Селфи с паспортом</span>
+								<input type="file" name="file3" required>
+							</div>
+						</div>
+
+						<!------ STEP 2 ----->
+						<div class="modal-appl-forms notactive">
+							<div class="col-xs-12">
+								<h2>Адрес регистрации (прописки)</h2>
+							</div>
+							<div class="col-xs-12">
+								<span>Регион</span>
+								<select name="region">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<span>Район</span>
+								<select name="raion">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<span>Село/ПГТ/Город</span>
+								<input type="text" name="selo" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Улица</span>
+								<input type="text" name="street" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Номер дома/квартиры/участка</span>
+								<input type="text" name="num_home" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Отношение к адресу</span>
+								<select name="relation_to_address">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+							<div class="col-xs-12 mt-30">
+								<h2>Адрес проживания</h2> <span><input type="checkbox"> Совпадаете с адресом регистрации?</span>
+							</div>
+							<div class="col-xs-12">
+								<span>Регион</span>
+								<select name="region">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<span>Район</span>
+								<select name="raion">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<span>Село/ПГТ/Город</span>
+								<input type="text" name="selo" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Улица</span>
+								<input type="text" name="street" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Номер дома/квартиры/участка</span>
+								<input type="text" name="num_home" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Отношение к адресу</span>
+								<select name="relation_to_address">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+						</div>
+
+						<!------ STEP 3 ----->
+						<div class="modal-appl-forms notactive">
+							<div class="col-xs-12">
+								<h2>Сведения о занятости</h2>
+							</div>
+							<div class="col-xs-12">
+								<span>Образование</span>
+								<select name="region">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<span>Трудовой статус</span>
+								<select name="region">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<span>Сфера деятельности</span>
+								<select name="region">
+									<option value="0">Выберите</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<span>Наименование место работы</span>
+								<input type="text" name="name_of_place_work">
+							</div>
+							<div class="col-xs-12">
+								<span>Название должности</span>
+								<input type="text" name="title_job">
+							</div>
+							<div class="col-xs-12">
+								<span>Дата трудоустройства</span>
+								<input type="date" name="date_of_employment">
+							</div>
+							<div class="col-xs-12">
+								<span>Доход в месяцах</span>
+								<input type="text" name="income_in_months">
+							</div>
+						</div>
+
+						<!------ STEP 4 ----->
+						<div class="modal-appl-forms notactive">
+							<div class="col-xs-12">
+								<h2>Сведения о контактном лице</h2>
+							</div>
+							<div class="col-xs-12">
+								<span>Ф.И.О</span>
+								<input type="text" name="fio_cont" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Кем является</span>
+								<input type="text" name="whois_cont" required>
+							</div>
+							<div class="col-xs-12">
+								<span>Мобильный телефон</span>
+								<input type="text" name="mobile_number_cont" required>
+							</div>
+						</div>
+
+						<!------ BUTTON ----->
+						<div class="col-xs-12 mt-30 notactive">
+							<button class="btn btn-block add_appl_btn" id='nextStep'>
+								Cледующий шаг
+							</button>
+						</div>
+
+					</div>
