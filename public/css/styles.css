@@ -1924,7 +1924,9 @@ ul {
 .form-style input[type="text"],
 .form-style input[type="number"],
 .form-style input[type="email"],
-.form-style textarea {
+.form-style input[type="date"],
+.form-style input[type="file"],
+.form-style textarea, .form-style select {
   width: 100%;
   height: 40px;
   padding-left: 15px;

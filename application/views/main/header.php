@@ -30,6 +30,8 @@
 	<link rel="stylesheet" href="<?= base_url() ?>public/css/responsive.css">
 	<!-- slider-range css -->
 	<link rel="stylesheet" href="<?= base_url() ?>public/css/range-slider.css">
+	<!-- stage-bar css -->
+	<link rel="stylesheet" href="<?= base_url() ?>public/css/progress-wizard.min.css">
 	<!-- modernizr css -->
 	<script src="<?= base_url() ?>public/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>

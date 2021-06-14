@@ -133,6 +133,8 @@
 <script src="<?= base_url() ?>public/js/scripts.js"></script>
 <!-- credit calc js -->
 <!--<script src="--><?//= base_url() ?><!--public/js/calc.js"></script>-->
+<!-- step js -->
+<script src="<?= base_url() ?>public/js/step.js"></script>
 </body>
 
 </html>

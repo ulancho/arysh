@@ -87,66 +87,11 @@ class Main extends CI_Controller
 		$this->load->view('main/footer');
 	}
 
-
-
-
-
-
-
-
-	//стр:подкаталог
-	public function good_one_in_podcatalog($id_catalog,$id_podcatalog){
-		$data['name_catalog'] = $this->AdminModels->get_first_name('catalog', 'name', $id_catalog);
-		$name_podcatalog = $this->AdminModels->get_first_name('podcatalog', 'name', $id_podcatalog)['name'];
-
-		$data['name_podcatalog'] = "> $name_podcatalog";
-
-		$data['goods'] = $this->AdminModels->get_goods_in_podcatalog($id_catalog,$id_podcatalog);
-
-		$data['news'] = $this->AdminModels->selectAllArray('news');
-		$data['reviews'] = $this->AdminModels->selectAllArray('reviews');
-		$data['catalog'] = $this->AdminModels->selectAllArray('catalog');
-
+	//стр: заявка
+	public function request(){
 		$this->load->view('main/header');
-		$this->load->view('main/catalog-one', $data);
+		$this->load->view('main/request');
 		$this->load->view('main/footer');
-	}
-
-	//процесс: добавление лида
-	public function add_request()
-	{
-		$data['form_name'] = $this->input->post('form_name');
-		$data['form_catalog'] = $this->input->post('form_catalog');
-		$data['form_number'] = $this->input->post('form_number');
-
-		$datas['error'] = 0;
-
-		if ($data['form_name'] == '' || $data['form_catalog'] == '' || $data['form_number'] == '') {
-			$datas['error'] = 1;
-		} else {
-			$add = $this->AdminModels->add_request($data);
-		}
-
-
-		echo json_encode($datas);
-
-	}
-
-	//процесс: поиск
-	public function search()
-	{
-		if (!empty($this->input->post('s'))) { //Принимаем данные
-			$value = trim(strip_tags(stripcslashes(htmlspecialchars($this->input->post('s')))));
-			$data['error'] = 0;
-			$data['result'] = $this->AdminModels->search_goods($value);
-			if(!$data['result']){
-                $data['error'] = -1;
-            }
-		}
-		else{
-            $data['error'] = 1;
-        }
-        echo json_encode($data);
 	}
 
 }
